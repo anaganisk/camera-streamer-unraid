@@ -21,4 +21,5 @@ RUN rm -f camera-streamer.deb
 # Expose port
 EXPOSE 8080
 # Set the default command to execute
-CMD ["camera-streamer"]
+ENTRYPOINT ["camera-streamer"]
+CMD [""]
