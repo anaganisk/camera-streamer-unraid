@@ -21,4 +21,4 @@ RUN rm -f camera-streamer.deb
 # Expose port
 EXPOSE 8080
 # Set the default command to execute
-CMD ["/usr/bin/camera-streamer", "-camera-nbufs=3", "--http-listen=0.0.0.0", "--http-port=8080", "-camera-video.disabled", "-camera-path=/dev/video0", "-camera-format=JPEG", "-camera-width=1920", "-camera-height=1080", "-camera-fps=30"]
+CMD ["camera-streamer", "-camera-nbufs=3", "--http-listen=0.0.0.0", "--http-port=8080", "-camera-video.disabled", "-camera-path=/dev/video0", "-camera-format=JPEG", "-camera-width=1920", "-camera-height=1080", "-camera-fps=30"]
