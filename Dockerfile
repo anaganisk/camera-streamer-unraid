@@ -1,5 +1,5 @@
 # Use Debian Bullseye as the base image
-FROM debian:bullseye-slim
+FROM balenalib/rpi-raspbian:bullseye-20230705
 # Set environment variables to avoid prompts
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TAG_NAME=$TAG_NAME
